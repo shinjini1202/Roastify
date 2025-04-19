@@ -2,3 +2,5 @@ streamlit
 google-generativeai
 PyPDF2
 streamlit-lottie
+python-dotenv
+
