@@ -64,7 +64,7 @@ No more vague advice. No more guesswork.
 
 ## 🧪 Try it Live
 
-(https://your-app-link.streamlit.app)  ](https://roastify-hack4bengal.streamlit.app/)
+(https://roastify-hack4bengal.streamlit.app/)
 
 
 ---
