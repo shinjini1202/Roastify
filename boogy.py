@@ -157,9 +157,9 @@ elif st.session_state.page == 2:
     The user uploaded a resume from the {st.session_state.industry} industry.
     Mode: {st.session_state.mode}.
 
-    First, provide a detailed kinda long witty and funny roast  or serious analysis based on the selected mode of the resume.
+    First, provide a detailed long witty and funny roast  or serious analysis based on the selected mode of the resume.
     Then write 'Suggestions:' and give constructive suggestions.
-    Then write 'Skill Gaps:' and list skill gaps + 3 free resources (with links) for each.
+    Then write 'Skill Gaps:' and list skill gaps + 3 free resources (with links) for each without extra spaing in between lines.
 
     Resume:
     {pdf_text}
@@ -185,10 +185,12 @@ elif st.session_state.page == 2:
     st.session_state.skill_gap = skill_gap
     st.session_state.page = 3
     st.rerun()
+
 # PAGE 3 — Results
 elif st.session_state.page == 3:
     set_background("background3.png")
     st.balloons()
+    st_lottie(load_lottiefile("ghost_button.json"), height=200)
 
     # Utility block style
     def block(title, content, color):
@@ -217,3 +219,9 @@ elif st.session_state.page == 3:
     if st.button("Upload another resume"):
         st.session_state.page = 0
         st.rerun()
+
+
+
+
+
+
